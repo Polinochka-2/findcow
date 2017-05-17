@@ -47,7 +47,6 @@ def clip_video(video_path, settings_path, df):
                     f.write(file[:-4]+'\n')
 
 def download_video(youtube_id, path, img_path, df):
-
     video_path = os.path.join(os.path.abspath(path), youtube_id+'.mp4')
     img_path = os.path.abspath(img_path)
 
@@ -60,6 +59,5 @@ def download_video(youtube_id, path, img_path, df):
 
     if os.path.exists(video_path):
         return youtube_id
-    else: return None
-
-
+    else:
+        return None
